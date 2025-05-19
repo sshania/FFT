@@ -9,11 +9,6 @@ def record_audio(duration=3, fs=44100):
     print("Recording complete.")
     return audio.flatten(), fs
 
-
-
-
-
-
 def fft_pitch_detection(audio, fs):
     """ Menggunakan FFT untuk mendeteksi fundamental frequency """
     window = np.hanning(len(audio))
